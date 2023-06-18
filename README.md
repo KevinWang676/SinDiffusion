@@ -1,3 +1,31 @@
+# Implementation
+
+### Preparation
+(1) Run
+```
+git clone https://github.com/KevinWang676/SinDiffusion.git
+cd SinDiffusion
+```
+(2) Run `conda install -c conda-forge mpi4py mpich`
+(3) Run
+```
+pip install blobfile
+pip install opencv-python
+pip install scipy
+pip install scikit-image
+```
+
+### Training
+Run
+```
+mpiexec -n 4 python image_train.py --data_dir balloons.png --lr 5e-4 --diffusion_steps 1000 --image_size 256 \
+--noise_schedule linear --num_channels 64 --num_head_channels 16 --channel_mult "1,2,4" \
+--attention_resolutions "2" --num_res_blocks 1 --resblock_updown False --use_fp16 True \
+--use_scale_shift_norm True --use_checkpoint True --batch_size 16
+```
+
+# Original README.md
+
 # SinDiffusion: Learning a Diffusion Model from a Single Natural Image
 
 Official PyTorch implementation of "SinDiffusion: Learning a Diffusion Model from a Single Natural Image".
