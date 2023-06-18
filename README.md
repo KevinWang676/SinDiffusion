@@ -19,7 +19,9 @@ pip install scikit-image
 ## Training
 (4) Run `export LOGDIR=/root/autodl-tmp`
 
-(5) Run
+(5) Remember to change the parameter `GPUS_PER_NODE = 8` in the script `dist_util.py` according to your GPU cluster configuration.
+
+(6) Run
 ```
 mpiexec -n 4 python image_train.py --data_dir balloons.png --lr 5e-4 --diffusion_steps 1000 --image_size 256 \
 --noise_schedule linear --num_channels 64 --num_head_channels 16 --channel_mult "1,2,4" \
