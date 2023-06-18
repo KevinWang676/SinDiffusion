@@ -29,6 +29,16 @@ mpiexec -n 4 python image_train.py --data_dir balloons.png --lr 5e-4 --diffusion
 --use_scale_shift_norm True --use_checkpoint True --batch_size 16
 ```
 
+## Sampling
+(6) Run
+```
+python image_sample.py --data_dir balloons.png --diffusion_steps 1000 --image_size 256 --noise_schedule linear \
+--num_channels 64 --num_head_channels 16 --num_res_blocks 1 --channel_mult "1,2,4" \
+--attention_resolution "2" --resblock_updown False --use_fp16 True --use_scale_shift_norm True \
+--use_checkpoint True --model_root ema_0.9999_020000.pt \
+--results_path output
+```
+
 # Original README.md
 
 # SinDiffusion: Learning a Diffusion Model from a Single Natural Image
