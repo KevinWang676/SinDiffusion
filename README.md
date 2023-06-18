@@ -30,7 +30,7 @@ mpiexec -n 4 python image_train.py --data_dir balloons.png --lr 5e-4 --diffusion
 ```
 
 ## Sampling
-(7) Create a folder named `scale_8` under `/root/autodl-tmp`
+(7) Create a folder named `scale_8` under `/root/autodl-tmp` and put the model `ema_0.9999_100000.pt` under `scale_8` since the training process only uses `ema_0.9999_100000.pt`
 
 (8) Run
 ```
