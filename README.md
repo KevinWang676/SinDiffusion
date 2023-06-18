@@ -7,6 +7,7 @@ git clone https://github.com/KevinWang676/SinDiffusion.git
 cd SinDiffusion
 ```
 (2) Run `conda install -c conda-forge mpi4py mpich`
+
 (3) Run
 ```
 pip install blobfile
