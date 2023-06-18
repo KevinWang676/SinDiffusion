@@ -40,6 +40,7 @@ python image_sample.py --data_dir balloons.png --diffusion_steps 1000 --image_si
 --use_checkpoint True --model_root /root/autodl-tmp \
 --results_path output
 ```
+P.S. The folder `output` contains the sampling results.
 
 # Original README.md
 
