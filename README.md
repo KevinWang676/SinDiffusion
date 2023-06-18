@@ -1,7 +1,7 @@
 # Implementation
 
 ## Preparation
-(1) Run
+(1) Run `git clone https://github.com/WeilunWang/SinDiffusion.git` or
 ```
 git clone https://github.com/KevinWang676/SinDiffusion.git
 cd SinDiffusion
