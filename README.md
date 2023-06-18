@@ -30,7 +30,7 @@ mpiexec -n 4 python image_train.py --data_dir balloons.png --lr 5e-4 --diffusion
 ```
 
 ## Sampling
-(6) Run
+(7) Run
 ```
 python image_sample.py --data_dir balloons.png --diffusion_steps 1000 --image_size 256 --noise_schedule linear \
 --num_channels 64 --num_head_channels 16 --num_res_blocks 1 --channel_mult "1,2,4" \
