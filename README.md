@@ -1,6 +1,6 @@
 # Implementation
 
-### Preparation
+## Preparation
 (1) Run
 ```
 git clone https://github.com/KevinWang676/SinDiffusion.git
@@ -15,7 +15,7 @@ pip install scipy
 pip install scikit-image
 ```
 
-### Training
+## Training
 Run
 ```
 mpiexec -n 4 python image_train.py --data_dir balloons.png --lr 5e-4 --diffusion_steps 1000 --image_size 256 \
