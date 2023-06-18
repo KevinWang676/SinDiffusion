@@ -17,7 +17,8 @@ pip install scikit-image
 ```
 
 ## Training
-Run
+(4) Run `export LOGDIR=/root/autodl-tmp`
+(5) Run
 ```
 mpiexec -n 4 python image_train.py --data_dir balloons.png --lr 5e-4 --diffusion_steps 1000 --image_size 256 \
 --noise_schedule linear --num_channels 64 --num_head_channels 16 --channel_mult "1,2,4" \
