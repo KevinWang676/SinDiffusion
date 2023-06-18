@@ -30,7 +30,8 @@ mpiexec -n 4 python image_train.py --data_dir balloons.png --lr 5e-4 --diffusion
 ```
 
 ## Sampling
-(7) Create a folder named `scale8` under `/root/autodl-tmp`.
+(7) Create a folder named `scale8` under `/root/autodl-tmp`
+
 (8) Run
 ```
 python image_sample.py --data_dir balloons.png --diffusion_steps 1000 --image_size 256 --noise_schedule linear \
